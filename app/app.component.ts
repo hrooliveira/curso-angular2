@@ -1,7 +1,15 @@
 import { Component } from '@angular/core';
 
+import { ContadorComponent } from './primeiro/contador.component';
+
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `
+        <contador></contador>
+    `,
+    directives: [ContadorComponent]
 })
-export class AppComponent { }
+export class AppComponent { 
+
+    }
+
